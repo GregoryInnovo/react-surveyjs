@@ -31,13 +31,13 @@ var json = {
           name: 'civilwar',
           title: 'When was the Civil War?',
           choices: [
-            '1750-1800',
+            '2000-2800',
             '1800-1850',
             '1850-1900',
             '1900-1950',
             'after 1950',
           ],
-          correctAnswer: '1850-1900',
+          correctAnswer: 'after 1950',
         },
       ],
     },
@@ -49,7 +49,7 @@ var json = {
           title: "Who said 'Give me liberty or give me death?'",
           choicesOrder: 'random',
           choices: [
-            'John Hancock',
+            'Example',
             'James Madison',
             'Patrick Henry',
             'Samuel Adams',
@@ -68,7 +68,7 @@ var json = {
           choicesOrder: 'random',
           choices: [
             'The foundation of the British parliamentary system',
-            'The Great Seal of the monarchs of England',
+            'Whats up',
             'The French Declaration of the Rights of Man',
             'The charter signed by the Pilgrims on the Mayflower',
           ],
@@ -90,10 +90,6 @@ export default function App() {
       'Result JSON:\n' + JSON.stringify(sender.data, null, 3);
     */
     let data = JSON.stringify(sender.data, null, 3);
-    let info = JSON.stringify(sender, null, 3);
-    console.log('Hey!');
-    console.log('Hey!');
-    console.log(sender);
     console.log(data);
   });
 
